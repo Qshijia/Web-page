@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: auto;
+            padding: 0;
+        }
+
+        #fan {
+            width: 800px;
+            height: 900px;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        #head {
+            width: 600px;
+            height: 600px;
+            border: 5px solid #F60;
+            border-radius: 50%;
+            position: relative;
+            animation: spin 1s linear infinite;
+        }
+
+        #base {
+            width: 400px;
+            height: 160px;
+            background-color: #069;
+            position: absolute;
+            bottom: 0;
+            left: 200px;
+            border-radius: 50%;
+        }
+
+        .leaf {
+            width: 240px;
+            height: 180px;
+            position: absolute;
+            top: 300px;
+            left: 300px;
+            /* background-color: red; */
+            transform-origin: top left;
+            /* border-bottom-left-radius: 50%;
+            border-top-left-radius: 15%;
+            border-bottom-right-radius: 30%;
+            border-top-right-radius: 50%; */
+            border-radius: 15% 50%;
+        }
+
+        .leaf1 {
+            background-color: #f00;
+            transform: rotate(0);
+        }
+
+        .leaf2 {
+            background-color: #0f0;
+            transform: rotate(120deg);
+        }
+
+        .leaf3 {
+            background-color: #00f;
+            transform: rotate(240deg);
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0);
+            }
+
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(270deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .btn {
+            width: 40px;
+            line-height: 30px;
+            position: absolute;
+            /* bottom: 50px; */
+            background-color: #ff0;
+            float: left;
+            z-index: 9;
+            text-align: center;
+            border-radius: 50%
+        }
+
+        .btn0 {
+            left: 260px;
+            bottom: 50px;
+        }
+
+        .btn1 {
+            left: 340px;
+            bottom: 30px;
+        }
+
+        .btn2 {
+            left: 420px;
+            bottom: 30px;
+        }
+
+        .btn3 {
+            left: 500px;
+            bottom: 50px;
+        }
+
+        #switch0:checked~#head {
+            animation-play-state: paused;
+        }
+
+        #switch1:checked~#head {
+            animation-duration: 0.8s;
+        }
+
+        #switch2:checked~#head {
+            animation-duration: 0.5s;
+        }
+
+        #switch2:checked~#head {
+            animation-duration: 0.2s;
+        }
+
+        .switch {
+            display: none;
+        }
+
+        .switch:checked+.btn {
+            background-color: #f0f;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fan">
+        <input type="radio" checked="checked" name="onoff" class="switch" id="switch0">
+        <label for="switch0" class="btn btn0">0</label>
+        <input type="radio" name="onoff" class="switch" id="switch1">
+        <label for="switch1" class="btn btn1">1</label>
+        <input type="radio" name="onoff" class="switch" id="switch2">
+        <label for="switch2" class="btn btn2">2</label>
+        <input type="radio" name="onoff" class="switch" id="switch3">
+        <label for="switch3" class="btn btn3">3</label>
+        <div id="head">
+            <div class="leaf leaf1"></div>
+            <div class="leaf leaf2"></div>
+            <div class="leaf leaf3"></div>
+        </div>
+        <div id="base"></div>
+    </div>
+
+</body>
+
+</html>

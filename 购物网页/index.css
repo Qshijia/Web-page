@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.w {
+    width: 1200px;
+    margin: auto;
+}
+/* 清除a链接的下划线 */
+a {
+    text-decoration: none;
+}
+/* 清除li的小圆点 */
+li {
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+}
+
+/* header模块 */
+.header {
+    height: 50px;
+    margin-top: 30px;
+}
+    /* hnav模块 */
+.header .hnav ul li{
+    float: left;
+    margin-left: 25px;
+}
+.header .hnav ul li a {
+    font-size: 16px;
+    line-height: 50px;
+    color: #000;
+}
+.header .hnav ul li a:hover {
+    color: orangered;
+}
+    /* 搜索模块 */
+.header .search {
+    float: right;
+    margin-right: 30px;
+    line-height: 50px;
+}
+.header .search input {
+    height: 30px;
+    width: 200px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    color: #999999;
+    font-size: 12px;
+    padding-left: 10px;
+}
+input:hover {
+    box-shadow: 4px -4px 2px -2px  rgba(238, 68, 45, 0.3) inset;
+}
+.header .search button {
+    height: 30px;
+    width: 50px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    background-color: orange;
+}
+button:hover {
+    box-shadow: 10px 10px 10px -4px rgba(238, 68, 45, 0.3) inset;
+}
+
+/* center模块 */
+.center {
+    margin-top: 20px;
+    height: 520px;
+    background: url(images/bg.png) no-repeat top center;
+}
+    /* 导航栏模块 */
+.center .subnav {
+    float: left;
+    margin: 10px 0px 0px 30px;
+    padding-top: 10px;
+    width: 240px;
+    height: 495px;
+    background-color: rgba(0,0,0,0.5);
+}
+.center .subnav ul li {
+    margin-bottom: 10px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 50px;
+}
+.center .subnav ul li a {
+    font-size: 16px;
+    color: #fff;
+}
+.center .subnav ul li a span {
+    float: right;
+}
+.center .subnav ul li a:hover {
+    color: orangered;
+}
+
+/* box模块 */
+.box {
+    margin-top: 30px;
+}
+.box .box-hd {
+    height: 45px;
+    /* background-color: pink; */
+}
+.box .box-hd h4 {
+    text-align: center;
+    line-height: 45px;
+    font-size: 18px;
+    color: #494949;
+}
+.boxs .goods ul {
+    margin-left: 100px;
+}
+.box .goods ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #eee;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.boxs .goods ul li {
+    margin-right: 30px;
+}
+.boxs .goods img {
+    width: 100%;
+    height: 190px;
+}
+.box .goods .info span{
+    float: right;
+    color: orangered;
+}
+
+/* footer模块 */
+.footer {
+    height: 100px;
+    margin-top: 30px;
+    background-color: #999;
+}
+.footer h4 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+}
+
+/* 二级页面模块 */
+.phone,
+.food,
+.women,
+.cosmetics {
+    height: 865px;
+}
+.box .bd {
+    border-top: 1px solid #000;
+}
+.box .gd ul li {
+    width: 380px;
+    height: 263px;
+    margin-left: 145px;
+    margin-bottom: 15px;
+}
+.box .gd h4 {
+    margin: 10px 20px;
+    font-size: 16px;
+    color: #050505;
+}
+.box .gd .info {
+    margin: 10px 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+.box .gd .info span{
+    float: right;
+    color: orangered;
+}
+    /* phone  food  模块 */
+.phone .gd ul li img,
+.food .gd ul li img {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #000;
+}
+.food .gd .info {
+    color: #050505;
+}
+    /* women  cosmetics  模块 */
+.women .gd ul li img,
+.cosmetics .gd ul li img {
+    float: left;
+    /* width: 100%; */
+    height: 263px;
+    border-right: 1px solid #000;
+}
+.women .gd .info,
+.cosmetics .gd .info {
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    color: #050505;
+    font-size: 16px;
+}
+.women .gd .info span,
+.cosmetics .gd .info span {
+    margin-top: 30px;
+}

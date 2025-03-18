@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>与经典同行</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* a链接的格式 */
+        a {
+            text-decoration: none;
+            color: orangered;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        /* 取消li的默认格式 */
+        li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        /* top部分 */
+        .top {
+            margin: 10px 0;
+            border-bottom: 1px solid black;
+        }
+
+        .top .txt {
+            text-shadow: 0px 2px gray;
+        }
+
+        /* banner部分 */
+        .banner {
+            height: 350px;
+            width: 500px;
+            background-image: url(images/bg.png);
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-color: #ffffff;
+            margin: 10px auto;
+        }
+
+        .banner .nt {
+            height: 70px;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            color: #ee8452;
+        }
+
+        .banner .nav {
+            float: left;
+            width: 150px;
+            height: 200px;
+            margin-left: 70px;
+        }
+
+        .banner .nav .book {
+            height: 30px;
+            width: 150px;
+            border-bottom: 1px solid #aaa;
+            margin: 0px 0px 10px 0px;
+            text-align: center;
+        }
+
+        .banner .nav .book a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #090426;
+            line-height: 30px;
+        }
+
+        .banner .nav .book a:hover {
+            color: orangered;
+        }
+
+        /* 返回顶端 */
+        .back {
+            float: right;
+            height: 30px;
+            /* background-color: orangered; */
+            line-height: 30px;
+            font-size: 20px;
+            border: 1px solid #000;
+            position: fixed;
+        }
+
+        /* cut部分 */
+        .cut {
+            height: 45px;
+            background-color: #aaa;
+        }
+
+        .cut h4 {
+            float: left;
+            line-height: 45px;
+            font-size: 20px;
+            color: #fff;
+            margin-left: 100px;
+        }
+
+        /* center部分 */
+        .center {
+            /* width: 1200px; */
+            margin: 10px auto;
+        }
+
+        .center .box {
+            height: 200px;
+            border-bottom: 1px solid #aaa;
+            margin-bottom: 5px;
+        }
+
+        /* 书籍封面 */
+        .center .box img {
+            float: left;
+            height: 170px;
+            width: 120px;
+            margin-left: 70px;
+            margin-top: 10px;
+            background-color: pink;
+        }
+
+        .center .box div img:hover {
+            box-shadow: 12px 12px 12px -4px rgb(0, 0, 0, .4);
+        }
+
+        /* 书籍信息 */
+        .center .box .infor {
+            width: 950px;
+            float: left;
+            height: 200px;
+            margin-left: 50px;
+        }
+
+        .center .box .infor .it {
+            float: left;
+            height: 80px;
+            width: 950px;
+        }
+
+        .center .box .infor .it .itl {
+            float: left;
+        }
+
+        /* 书名 */
+        .center .box .infor .it .itl .name {
+            margin-top: 15px;
+        }
+
+        /* 作者 */
+        .center .box .infor .it .itl .author {
+            margin-top: 10px;
+        }
+
+        /* 了解更多 */
+        .center .box .infor .it .itr {
+            float: right;
+            margin-top: 15px;
+            font-size: 22px;
+        }
+
+        /* 简介 */
+        .center .box .infor .ib {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .center .box .infor .ib {
+            text-indent: 2em;
+        }
+
+        /* footer部分 */
+        .footer {
+            height: 100px;
+            /* border: 1px solid #000; */
+            background-color: #aaa;
+        }
+
+        .footer h4 {
+            line-height: 100px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top部分 -->
+    <div class="top" id=back>
+        <h1 class="txt">
+            <img src="images/logo.jpg">
+            好书推荐--与经典同行
+        </h1>
+    </div>
+    <!-- banner部分 -->
+    <div class="banner">
+        <div class="nt">十本好书推荐</div>
+        <!-- nav部分 -->
+        <div class="nav">
+            <div class="book">
+                <a href="#one">追风筝的人</a>
+            </div>
+            <div class="book">
+                <a href="#two">边城</a>
+            </div>
+            <div class="book">
+                <a href="#three">摆渡人</a>
+            </div>
+            <div class="book">
+                <a href="#four">一个人的朝圣</a>
+            </div>
+            <div class="book">
+                <a href="#five">目送</a>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="book">
+                <a href="#six">岛上书店</a>
+            </div>
+            <div class="book">
+                <a href="#seven">活着</a>
+            </div>
+            <div class="book">
+                <a href="#eight">悲惨世界</a>
+            </div>
+            <div class="book">
+                <a href="#nine">白夜行</a>
+            </div>
+            <div class="book">
+                <a href="#ten">钢铁是怎样炼成的</a>
+            </div>
+        </div>
+    </div>
+    <!-- back部分 -->
+    <div class="back">
+        <a href="#back">
+            <h5>
+                返回顶端 ^
+            </h5>
+        </a>
+    </div>
+    <!-- cut部分 -->
+    <div class="cut">
+        <h4>试试点击图书，开始阅读吧~ >></h4>
+    </div>
+    <!-- center部分 -->
+    <div class="center w">
+        <ul>
+            <li>
+                <div class="box">
+                    <!-- 书籍封面 -->
+                    <div>
+                        <a href="https://www.yooread.net/6/256/" target="_blank"><img src="images/追风筝的人.png"></a>
+                    </div>
+                    <!-- 书籍信息 -->
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <!-- 书名 -->
+                                <div class="name">
+                                    <h2 id="one">追风筝的人</h2>
+                                </div>
+                                <!-- 作者 -->
+                                <div class="author">
+                                    作者：卡勒德·胡赛尼
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <!-- 了解更多 -->
+                                <div class="more"><a
+                                        href="https://baike.sogou.com/v64473980.htm?fromTitle=%E8%BF%BD%E9%A3%8E%E7%AD%9D%E7%9A%84%E4%BA%BA"
+                                        target="_blank">了解更多 >></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <!-- 简介 -->
+                            <p>简介：《追风筝的人》（外文名：The Kite
+                                Runner）是美籍阿富汗作家卡勒德·胡赛尼的第一部长篇小说，是美国2005年排名第三的畅销书。该书以第一人称的角度，围绕风筝与阿富汗的两个少年展开，讲述了一个富家少年与家中仆人关于风筝、关于人性的背叛与救赎的故事。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="http://www.993buy.com/748_748656/" target="_blank"><img src="images/边城.png"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="two">边城</h2>
+                                </div>
+                                <div class="author">
+                                    作者：沈从文
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a
+                                        href="https://baike.sogou.com/v64495564.htm?fromTitle=%E8%BE%B9%E5%9F%8E"
+                                        target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p>简介：该小说以20世纪30年代川湘交界的边城小镇茶峒为背景，以兼具抒情诗和小品文的优美笔触，描绘了湘西地区特有的风土人情；借船家少女翠翠的纯爱故事，凸显出了人性的善良美好与心灵的澄澈纯净。《边城》以独特的艺术魅力，生动的乡土风情吸引了众多海内外的读者，也奠定了它在中国现代文学史上的特殊地位。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="https://www.tianyabook.com/shu/8719.html" target="_blank"><img
+                                src="images/摆渡人.png"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="three">摆渡人</h2>
+                                </div>
+                                <div class="author">
+                                    作者：克莱儿·麦克福尔
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a
+                                        href="https://baike.sogou.com/v101404114.htm?fromTitle=%E6%91%86%E6%B8%A1%E4%BA%BA%EF%BC%88%E5%85%8B%E8%8E%B1%E5%84%BF%C2%B7%E9%BA%A6%E5%85%8B%E7%A6%8F%E5%B0%94%E4%BD%9C%E5%93%81%EF%BC%89"
+                                        target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p> 简介：单亲女孩迪伦，15岁的世界一片狼藉：与母亲总是无话可说，在学校里经常受到同学的捉弄，唯一谈得来的好友也因为转学离开了。这一切都让迪伦感到无比痛苦。她决定去看望久未谋面的父亲，然而，路上突发交通事故。等她拼命爬出火车残骸之后，却惊恐地发现，自己是唯一的幸存者，而眼前，竟是一片荒原。此时，迪伦看到不远处的山坡上一个男孩的身影。男孩将她带离了事故现场。但是，迪伦很快意识到，男孩并不是偶然出现的路人，他似乎是特意在此等候。命运，从他们相遇的那刻开始，发生了无法预料的转变……
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="https://www.yooread.net/7/4969/" target="_blank"><img src="images/一个人的朝圣.jpg"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="four">一个人的朝圣</h2>
+                                </div>
+                                <div class="author">
+                                    作者：蕾秋·乔伊斯
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a
+                                        href="https://baike.sogou.com/v61491529.htm?fromTitle=%E4%B8%80%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%9C%9D%E5%9C%A3"
+                                        target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p>简介：一天早晨，哈罗德·弗莱收到一封信，来自二十年未见的老友奎妮。她患了癌症，写信告别。震惊、悲痛之下，哈罗德写了回信，在寄出的路上，他由奎妮想到了自己的人生，经过了一个又一个邮筒，越走越远，最后，他从英国最西南一路走到了最东北，横跨整个英格兰。87天，627英里，只凭一个信念：只要他走，老友就会活下去！这是哈罗德千里跋涉的故事。从他脚步迈开的那一刻起，与他六百多英里旅程并行的，是他穿越时光的另一场内心之旅。这趟旅程经过自我、走过现代社会百态、跨越时间和地理风景，他敞开自己伤痕累累的心，让世界走进来，让生命重新发光。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="https://www.yooread.net/8/281/" target="_blank"><img src="images/目送.png"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="five">目送</h2>
+                                </div>
+                                <div class="author">
+                                    作者：龙应台
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a
+                                        href="https://baike.sogou.com/v67744670.htm?fromTitle=%E7%9B%AE%E9%80%81"
+                                        target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p>简介：《目送》是一本生死笔记，深邃，忧伤，美丽。《目送》的七十三篇散文，写父亲的逝、母亲的老、儿子的离、朋友的牵挂、兄弟的携手共行，写失败和脆弱、失落和放手，写缠绵不舍和绝然的虚无。她写尽了幽微，如烛光冷照山壁。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="https://www.yooread.net/7/5018/" target="_blank"><img src="images/岛上书店.jpg"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="six">岛上书店</h2>
+                                </div>
+                                <div class="author">
+                                    作者：加布瑞埃拉·泽文
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a
+                                        href="https://baike.sogou.com/v100460968.htm?fromTitle=%E5%B2%9B%E4%B8%8A%E4%B9%A6%E5%BA%97"
+                                        target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p>简介：岛上书店是间维多利亚风格的小屋，门廊上挂着褪色的招牌，上面写着：「没有谁是一座孤岛，每本书都是一个世界」A．J．费克里，人近中年，在一座与世隔绝的小岛上，经营一家书店。命运从未眷顾过他，爱妻去世，书店危机，就连唯一值钱的宝贝也遭窃。他的人生陷入僵局，他的内心沦为荒岛。就在此时，一个神秘的包袱出现在书店中，意外地拯救了陷于孤独绝境中的A．J．，成为了连接他和小姨子伊斯梅、警长兰比亚斯、出版社女业务员阿米莉娅之间的纽带，为他的生活带来了转机。小岛上的几个生命紧紧相依，走出了人生的困境，而所有对书和生活的热爱都周而复始，愈加汹涌。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="http://www.yuedu88.com/huozhe/" target="_blank"><img src="images/活着.png"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="seven">活着</h2>
+                                </div>
+                                <div class="author">
+                                    作者：余华
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a
+                                        href="https://baike.sogou.com/v185856228.htm?fromTitle=%E6%B4%BB%E7%9D%80%EF%BC%88%E4%BD%99%E5%8D%8E%E8%91%97%E4%B9%A6%E7%B1%8D%EF%BC%89"
+                                        target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p>简介：本书是一篇读起来让人感到沉重的小说。那种只有阖上书本才会感到的隐隐不快，并不是由作品提供的故事的残酷造成的。毕竟，作品中的亡家，丧妻，失女以及白发人送黑发人这样的故事并不具备轰动性。同时，余华也不是一个具有很强煽动能力的作家，实际上，渲染这样的表达方式是余华一直所不屑的。余华所崇尚的只是叙述，用一种近乎冰冷的笔调娓娓叙说一些其实并不正常的故事。而所有的情绪就是在这种娓娓叙说的过程中中悄悄侵入读者的阅读。这样说来，《活着》以一种渗透的表现手法完成了一次对生命意义的哲学追问。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="http://www.uuxs.tw/ls/3_3273/" target="_blank"><img src="images/悲惨世界.png"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="eight">悲惨世界</h2>
+                                </div>
+                                <div class="author">
+                                    作者：维克多·雨果
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a href="https://baike.sogou.com/v216883.htm?fromTitle=%E6%82%B2%E6%83%A8%E4%B8%96%E7%95%8C%EF%BC%88%E7%BB%B4%E5%85%8B%E5%A4%9A%C2%B7%E9%9B%A8%E6%9E%9C%E5%88%9B%E4%BD%9C%E9%95%BF%E7%AF%87%E5%B0%8F%E8%AF%B4%EF%BC%89
+                                        " target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p>简介：《悲惨世界》是一部由法国作家维克多·雨果所著的长篇小说，于1862年首次发表，该书被称为是一部《奥德赛》式的伟大史诗。作者通过冉阿让等人的悲惨遭遇以及冉阿让被卞福汝主教感化后一系列令人感动的事迹，深刻揭露和批判了19世纪法国封建专制社会的腐朽本质及其罪恶现象，对穷苦人民在封建重压下所遭受的剥削欺诈和残酷迫害表示了悲悯和同情。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="http://www.yuedu88.com/baiyexing/" target="_blank"><img src="images/白夜行.png"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="nine">白夜行</h2>
+                                </div>
+                                <div class="author">
+                                    作者：东野圭吾
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a
+                                        href="https://baike.sogou.com/v64643193.htm?fromTitle=%E7%99%BD%E5%A4%9C%E8%A1%8C"
+                                        target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p>简介：故事讲述了1973年在大阪的一栋废弃建筑内发现了一具男尸，此后19年，嫌疑人之女雪穗与被害者之子桐原亮司走上截然不同的人生道路，一个跻身上流社会，一个却在底层游走，而他们身边的人接连离奇死去，警察经过19年追踪，终于使真相大白。“只希望能手牵手在太阳下散步”，这个象征故事内核的绝望念想，有如一个美丽的幌子，随着无数凌乱、压抑、悲凉的故事片段像纪录片一样一一还原：没有痴痴相思，没有海枯石烂，只剩下一个冰冷绝望的诡计，最后一丝温情也被完全抛弃，万千读者在一曲救赎罪恶的凄苦爱情中悲切动容……
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="box">
+                    <div>
+                        <a href="http://www.dushu369.com/waiguomingzhu/gtszylcd/" target="_blank"><img
+                                src="images/钢铁是怎样炼成的.jpg"></a>
+                    </div>
+                    <div class="infor">
+                        <div class="it">
+                            <div class="itl">
+                                <div class="name">
+                                    <h2 id="ten">钢铁是怎样炼成的</h2>
+                                </div>
+                                <div class="author">
+                                    作者：尼古拉·奥斯特洛夫斯基
+                                </div>
+                            </div>
+                            <div class="itr">
+                                <div class="more"><a href="https://baike.sogou.com/v64392728.htm?fromTitle=%E9%92%A2%E9%93%81%E6%98%AF%E6%80%8E%E6%A0%B7%E7%82%BC%E6%88%90%E7%9A%84
+                                        " target="_blank">了解更多
+                                        >></a></div>
+                            </div>
+                        </div>
+                        <div class="ib">
+                            <p>简介：《钢铁是怎样炼成的》是前苏联作家尼古拉·奥斯特洛夫斯基所著的一部长篇小说，于1933年写成。小说通过记叙保尔·柯察金的成长道路告诉人们，一个人只有在革命的艰难困苦中战胜敌人也战胜自己，只有在把自己的追求和祖国、人民的利益联系在一起的时候，才会创造出奇迹，才会成长为钢铁战士。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- footer部分 -->
+    <div class="footer w">
+        <h4>版权所有。</h4>
+    </div>
+</body>
+
+</html>

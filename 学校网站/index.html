@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖北师范大学-生命科学学院</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        div {
+            display: block;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            height: 150px;
+            /* background-color: pink; */
+        }
+
+        .top1 {
+            height: 100px;
+        }
+
+        .top1 a {
+            font: 16px 'Microsoft YaHei';
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .top1 a:hover {
+            color: red;
+        }
+
+        .top1 span {
+            float: right;
+            padding: 35px 15px 0px 0px;
+            /* margin-right: 32px; */
+        }
+
+        .top2 {
+            height: 50px;
+            background-color: #168321;
+        }
+
+        .top2 li {
+            display: inline-block;
+            padding: 0 32px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .top2 a {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .center {
+            padding: 7px 0px;
+            height: 502px;
+            /* background-color: #fff; */
+        }
+
+        .he {
+            height: 502px;
+            padding: 10px 0px;
+            /* background-color: blue; */
+        }
+
+        .he .he1 {
+            height: 245px;
+            /* background-color: green; */
+        }
+
+        .tu {
+            width: 792px;
+            height: 238px;
+            float: left;
+            /* background-color: pink; */
+        }
+
+        .tu1 {
+            width: 790px;
+            height: 220px;
+            margin-bottom: 16px;
+            border: solid 1px #ccc;
+            /* background-color: blue; */
+        }
+
+        .box1 {
+            width: 387px;
+            height: 237px;
+            float: right;
+            /* background-color: red; */
+        }
+
+        .box1 a {
+            font: 14px 'Microsoft YaHei';
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .box1 a:hover {
+            color: red;
+        }
+
+        .box1-1 {
+            width: 387px;
+            height: 219px;
+            margin-bottom: 16px;
+            border: solid 1px #ccc;
+            /* background-color: pink; */
+        }
+
+        .tt {
+            width: 385px;
+            height: 32px;
+            border-bottom: 2px solid #ccc;
+            /* background-color: yellow; */
+        }
+
+        .tt1 {
+            display: inline-block;
+            /* float: left; */
+            width: 121px;
+            height: 32px;
+            border-bottom: 2px solid #187724;
+            font-size: 18px;
+            font-weight: normal;
+            color: #187724;
+            /* padding-left: 24px; */
+            /* padding-right: 10px; */
+            /* background-color: #fff; */
+        }
+
+        .tt1 .png1 {
+            height: 32px;
+            width: 15px;
+            display: inline-block;
+        }
+
+        .title {
+            display: inline-block;
+            width: 72px;
+            height: 32px;
+            line-height: 32px;
+            /* padding-left: 24px;
+            padding-right: 10px; */
+            /* background-color: blue; */
+        }
+
+        .title-hb3 {
+            display: inline-block;
+            width: 92px;
+            height: 32px;
+            line-height: 32px;
+        }
+
+        .tt2 {
+            display: block;
+            width: 39px;
+            height: 32px;
+            line-height: 32px;
+            float: right;
+            padding-right: 8px;
+            /* background-color: red; */
+        }
+
+        /* .more {} */
+
+        .list {
+            width: 385px;
+            height: 175px;
+            padding: 5px 0;
+            /* background-color: #fff; */
+        }
+
+        .bb {
+            display: block;
+            width: 385px;
+            height: 175px;
+            /* background-color: red; */
+        }
+
+        .bb .bb1 {
+            height: 35px;
+            line-height: 34px;
+            /* background-color: purple; */
+        }
+
+        .ll {
+            display: inline;
+            float: left;
+            width: 289px;
+            height: 35px;
+            /* background-color: pink; */
+        }
+
+        .sign2 {
+            width: 10px;
+            height: 28px;
+            padding: 3px 5px 0px;
+            /* background-color: black; */
+        }
+
+        .sign img {
+            font: 12px 'Microsoft YaHei';
+        }
+
+        .txt {
+            width: 264px;
+            height: 34px;
+            margin: 0px 0px 0px 5px;
+        }
+
+        .data {
+            display: inline-block;
+            width: 86px;
+            height: 34px;
+            padding: 0px 5px 0px 0px;
+            margin: 0px 0px 0px 5px;
+            color: #000;
+            font: 14px 'Microsoft YaHei';
+        }
+
+        .he .he2 {
+            height: 237px;
+            /* display: inline-block; */
+            /* background-color: blue; */
+        }
+
+        .hb1 .box1 {
+            /* display: inline; */
+            float: left;
+        }
+
+        .hb2 .box1 {
+            margin-left: 22.5px;
+        }
+
+        .list-tu {
+            width: 365px;
+            height: 160px;
+            padding: 11px 10px;
+        }
+
+        .list-tu a {
+            margin-left: 3px;
+            margin-bottom: 4px;
+        }
+
+        .hb3 .box1 {
+            /* display: inline; */
+            float: right;
+            /* margin-left: 17px; */
+        }
+
+
+        .end {
+            height: 54px;
+            background-color: #187724;
+            padding: 25px 0px;
+        }
+
+        .end p {
+            font: 14px 'Microsoft YaHei';
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="top1">
+            <img src="images/logo.png">
+            <span>
+                <a href="#">学校主页</a>
+                |&nbsp;
+                <a href="#">加入收藏</a>
+                |&nbsp;
+                <a href="#">磁湖新闻</a>
+                |&nbsp;
+                <a href="#">旧版回顾</a>
+            </span>
+        </div>
+        <div class="top2">
+            <url>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">学院概况</a></li>
+                <li><a href="#">师资队伍</a></li>
+                <li><a href="#">科学研究</a></li>
+                <li><a href="#">本科生培养</a></li>
+                <li><a href="#">研究生培养</a></li>
+                <li><a href="#">学生工作</a></li>
+                <li><a href="#">党群工作</a></li>
+                <li><a href="#">校友园地</a></li>
+            </url>
+        </div>
+    </div>
+    <div class="center">
+        <div class="he">
+            <div class="he1">
+                <div class="tu">
+                    <div class="tu1"><img src="images/1.jpg"></div>
+                </div>
+                <div class="box1">
+                    <div class="box1-1">
+                        <div class="tt">
+                            <h3 class="tt1">
+                                <span class="png1"><img src="images/1.png"></span>
+                                <span class="title" frag="标题">通知公告</span>
+                            </h3>
+                            <div class="tt2" frag="按钮">
+                                <a href="#" class="more">更多+</a>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <ul class="bb">
+                                <li class="bb1">
+                                    <div class="ll">
+                                        <span class="sign2"><img src="images/2.png"></span>
+                                        <span class="txt"><a href="#" target="_blank"
+                                                title="湖北师范大学生命科学学院2019-2020年蓝图创新奖学金评选结果公示">湖北师范大学生命科学学院2019-2020年...</a></span>
+                                    </div>
+                                    <div class="data"><span class="data1">2020-11-17</span></div>
+                                </li>
+                                <li class="bb1">
+                                    <div class="ll">
+                                        <span class="sign2"><img src="images/2.png"></span>
+                                        <span class="txt"><a href="#" target="_blank"
+                                                title="关于湖北师范大学生命科学学院2019-2020年蓝图创新奖学金评选的通知">关于湖北师范大学生命科学学院2019-20...</a></span>
+                                    </div>
+                                    <div class="data"><span class="data1">2020-11-04</span></div>
+                                </li>
+                                <li class="bb1">
+                                    <div class="ll">
+                                        <span class="sign2"><img src="images/2.png"></span>
+                                        <span class="txt"><a href="#" target="_blank"
+                                                title="生命科学学院2019级“生物科学类”专业分流情况公示">生命科学学院2019级“生物科学类”专...</a></span>
+                                    </div>
+                                    <div class="data"><span class="data1">2020-07-07</span></div>
+                                </li>
+                                <li class="bb1">
+                                    <div class="ll">
+                                        <span class="sign2"><img src="images/2.png"></span>
+                                        <span class="txt"><a href="#" target="_blank"
+                                                title="湖北师范大学2020届生命科学学院本科毕业生毕业资格、学位授予资格审查情况公示">湖北师范大学2020届生命科学学院本科...</a></span>
+                                    </div>
+                                    <div class="data"><span class="data1">2020-06-01</span></div>
+                                </li>
+                                <li class="bb1">
+                                    <div class="ll">
+                                        <span class="sign2"><img src="images/2.png"></span>
+                                        <span class="txt"><a href="#" target="_blank"
+                                                title="湖北师范大学生命科学学院2020年全日制硕士研究生调剂考生拟录取名单公示">湖北师范大学生命科学学院2020年全日...</a></span>
+                                    </div>
+                                    <div class="data"><span class="data1">2020-05-25</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="he2">
+                <div class="hb1">
+                    <div class="box1">
+                        <div class="box1-1">
+                            <div class="tt">
+                                <h3 class="tt1">
+                                    <span class="png1"><img src="images/1.png"></span>
+                                    <span class="title" frag="标题">学院动态</span>
+                                </h3>
+                                <div class="tt2" frag="按钮">
+                                    <a href="#" class="more">更多+</a>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <ul class="bb">
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank"
+                                                    title="我院组织开展青年教师公开课活动">我院组织开展青年教师公开课活动</a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-11-19</span></div>
+                                    </li>
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank" title="首期课程思政教学沙龙成功举办
+                                                    ">首期课程思政教学沙龙成功举办
+                                                </a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-11-16</span></div>
+                                    </li>
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank"
+                                                    title="第五届大学生美食文化节成功举办">第五届大学生美食文化节成功举办</a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-11-13</span></div>
+                                    </li>
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank"
+                                                    title="湖北省大学生酒体设计大赛校内选拔赛成功举办">湖北省大学生酒体设计大赛校内选拔赛成...</a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-11-10</span></div>
+                                    </li>
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank"
+                                                    title="食品科学与工程专业学生赴劲牌酒业公司开展参观实践活动">食品科学与工程专业学生赴劲牌酒业公司...</a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-11-06</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hb2">
+                    <div class="box1">
+                        <div class="box1-1">
+                            <div class="tt">
+                                <h3 class="tt1">
+                                    <span class="png1"><img src="images/1.png"></span>
+                                    <span class="title" frag="标题">快速通道</span>
+                                </h3>
+                                <div class="tt2" frag="按钮">
+                                    <a href="#" class="more">更多+</a>
+                                </div>
+                            </div>
+                            <div class="list-tu">
+                                <a href="#" target="_block"><img src="images/0A系统.png"></a>
+                                <a href="#" target="_block"><img src="images/教务管理.png"></a>
+                                <a href="#" target="_block"><img src="images/常用链接.png"></a>
+                                <a href="#" target="_block"><img src="images/在线课程.png"></a>
+                                <a href="#" target="_block"><img src="images/实验室.png"></a>
+                                <a href="#" target="_block"><img src="images/文件下载.png"></a>
+                                <a href="#" target="_block"><img src="images/教学示范中心.png"></a>
+                                <a href="#" target="_block"><img src="images/专题网站.png"></a>
+                                <a href="#" target="_block"><img src="images/虚拟仿真.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hb3">
+                    <div class="box1">
+                        <div class="box1-1">
+                            <div class="tt">
+                                <h3 class="tt1">
+                                    <span class="png1"><img src="images/1.png"></span>
+                                    <span class="title-hb3" frag="标题">进展与成果</span>
+                                </h3>
+                                <div class="tt2" frag="按钮">
+                                    <a href="#" class="more">更多+</a>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <ul class="bb">
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank" title="2020年度国家自然科学基金立项一览表
+                                                    ">2020年度国家自然科学基金立项一览表
+                                                </a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-09-22</span></div>
+                                    </li>
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank"
+                                                    title="我院获批2020年度国家级大学生创新创业训练计划项目3项">我院获批2020年度国家级大学生创新创...</a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-09-12</span></div>
+                                    </li>
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank"
+                                                    title="第五届全国大学生生命科学创新创业大赛获奖证书（学生）">第五届全国大学生生命科学创新创业大赛...</a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-09-01</span></div>
+                                    </li>
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank"
+                                                    title="第五届全国大学生生命科学创新创业大赛获奖证书（教师）">第五届全国大学生生命科学创新创业大赛...</a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-09-01</span></div>
+                                    </li>
+                                    <li class="bb1">
+                                        <div class="ll">
+                                            <span class="sign2"><img src="images/2.png"></span>
+                                            <span class="txt"><a href="#" target="_blank"
+                                                    title="第五届全国大学生生命科学创新创业大赛获奖名单">第五届全国大学生生命科学创新创业大赛...</a></span>
+                                        </div>
+                                        <div class="data"><span class="data1">2020-08-23</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <p>湖北师范大学生命科学学院　©　2017-2020　版权所有</p>
+        <p>地址：湖北省黄石市磁湖路11号　邮编：435002　电话：0714-6511613　E-mail: hbnubio@163.com</p>
+    </div>
+</body>
+
+</html>

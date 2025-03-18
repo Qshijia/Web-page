@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>易烊千玺</title>
+    <style>
+        #tab {
+            width: 600px;
+            height: 400px;
+            border: #000 1px solid;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .txt {
+            width: 598px;
+            height: 365px;
+            position: absolute;
+            bottom: 1px;
+            right: 1px;
+            display: none;
+        }
+
+        #tab1:checked~#txt1 {
+            display: block;
+        }
+
+        #tab2:checked~#txt2 {
+            display: block;
+        }
+
+        #tab3:checked~#txt3 {
+            display: block;
+        }
+
+        .txt img {
+            width: 598px;
+            height: 365px;
+        }
+
+        /* .tabs{ display:none;} */
+        .lab {
+            float: left;
+            width: 200px;
+            line-height: 2em;
+            text-align: center;
+            border-bottom: #000 1px solid;
+            border-left: #000 1px solid;
+            margin-left: -1px;
+            background-color: #eee;
+        }
+
+        .tabs:checked+.lab {
+            border-bottom: none;
+            background-color: #FFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tab">
+        <input type="radio" id="tab1" class="tabs" name="xxk" checked>
+        <!-- <label class="lab" for="tab1">易烊千玺1</label> -->
+        <input type="radio" id="tab2" class="tabs" name="xxk">
+        <!-- <label class="lab" for="tab2">易烊千玺2</label> -->
+        <input type="radio" id="tab3" class="tabs" name="xxk">
+        <!-- <label class="lab" for="tab3">易烊千玺3</label> -->
+        <div id="txt1" class="txt"><img src="1.jpg"></div>
+        <div id="txt2" class="txt"><img src="2.jpeg"></div>
+        <div id="txt3" class="txt"><img src="3.jpg"></div>
+    </div>
+</body>
+
+</html>
